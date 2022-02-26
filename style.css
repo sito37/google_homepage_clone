@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.align-center{
+    display: flex;
+    justify-content: center;
+}
+.nav{
+    height: 60px;
+    width: 100%;
+  
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.nav-items{
+    display: flex;
+    gap: 20px;
+    
+}
+.nav-item-sign-in{
+    border: 1px solid transparent;
+    padding: 9px 24px;
+    margin:0 18px 0;
+    border-radius: 5px;
+    background-color: #307fe6;
+    color: #fff;
+}
+.nav-item-sign-in:hover{
+    background-color: #5a98e9;
+}
+.nav-item-description{
+    color: rgba(0,0,0,0.87);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.nav-item-description:hover{
+    text-decoration: underline;
+}
+.fa-th{
+    color: rgba(77, 74, 74, 0.7);
+    font-size: 24px;
+    /* font-weight: lighter; */
+    padding: 9px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    margin-right: -15px;
+}
+.fa-th:hover{
+    background-color: rgba(153, 147, 147, 0.2);
+}
+.drop-down-box{
+    display: none;
+    height: 400px;
+    width: 300px;
+    margin-right: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: rgba(0,0,0,0.87); 
+    border-radius: 5px;
+    box-shadow: 0 0 3px 1px #555;
+    /* background-color: rgb(39, 35, 35); */
+
+    
+}
+.drop-down-box::-webkit-scrollbar{
+    width: 5px;
+    border-radius: 5px;
+    padding: 9px;
+}
+.drop-down-box::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+.drop-down-box::-webkit-scrollbar-thumb{
+    background: #888;
+}
+.drop-down-box::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+.fa-th:hover .drop-down-box{
+    display: grid;
+    position: absolute;
+    background-color: rgb(199, 199, 201);
+    margin-top: 17px;
+    margin-right: 20px;
+    right: 10px;
+    transition: 0.2s ease-in;
+    
+}
+.fa-th:hover .drop-down-box ul{
+    text-decoration: none;
+    list-style: none;
+}
+.drop-down-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.drop-down-list li{
+    font-size: small;
+    font-family: arial;
+    font-weight: lighter;
+    width: 75px;
+    height: 75px;
+}
+.drop-down-list li:hover{
+    background: rgb(184, 184, 235);
+    border-radius: 5px;
+}
+.drop-down-item-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    margin: 10px;
+    
+}
+.drop-down-item-container img{
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+}
+/* mid-session */
+.google-logo{
+    height: 200px;
+    width: 310px;
+}
+.google-logo-container{
+    display: flex;
+    justify-content: center;
+}
+.search-area-object-holder{
+    display: flex;
+    position: relative;
+    border: 1px solid rgb(219, 216, 216);
+    height: 45px;
+    width: 600px;
+    justify-content: center;
+    border-radius: 50px;
+    margin-top: -35px;
+}
+.search-area{
+    display: flex;
+    justify-content: center;
+}
+.search-input{
+    width: 500px;
+    border: none;
+    /* -webkit-tap-highlight-color: blue; */
+    background-color: transparent;
+    outline: none;
+    color: rgba(0,0,0,.87);
+    font-size: 16px;
+}
+.fa-magnifying-glass{
+    color: gray;
+    position: absolute;
+    top: 35%;
+    left: 15px;
+    /* font-size: 16px; */
+}
+.fa-microphone{
+    top: 20%;
+    right: -20px;
+    font-size: 23px;
+    color: rgb(50, 50, 223);
+    position: relative;
+    cursor: pointer;
+}
+.mic-holder{
+    position: relative;
+    background-color: cadetblue;
+    width: 0;
+}
+.mic-tooltip{
+    visibility: hidden;  
+    width: 120px;
+    padding: 3px 2px;
+    border: 1px solid whitesmoke;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    /* z-index:4; */
+    top: 35px;
+    /* right: -0.56px; */
+}
+.mic-holder:hover .mic-tooltip{
+    visibility: visible;
+}
+.search-area-object-holder:hover{
+    box-shadow: 0 0 5px 1px rgba(211, 222, 226, 0.78);
+}
+.main-session-buttons{
+    gap: 15px;
+    margin-top: 30px;
+}
+.main-session-button{
+    border: transparent;
+    font-family: arial;
+    font-size: 15px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: rgb(77, 74, 74);
+}
+.main-session-button:hover{
+    border:1px solid rgba(165, 162, 162, 0.5); 
+}
+.blue-internaut{
+    height: 33px;
+}
+.blue-internaut-session{
+    gap: 10px;
+    align-items: center;
+    font-size: small;
+    margin-top: 20px;
+    font-family: arial;
+}
+.main-session-languages{
+    margin-top: 20px;
+    font-family: arial;
+    font-size: small;
+    gap: 7px;
+    font-weight: 200;
+}
+.main-session-languages a:hover{
+    text-decoration: underline;
+}
+.footer1{
+    height: 50px;
+    display: block;
+    padding: 15px;
+    padding-left: 35px;
+    background-color: rgb(248, 246, 246);
+    border-bottom: 1px solid #dadce0;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    color: #70757a;
+    font-family: arial;
+    font-size: 15px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(248, 246, 246);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    align-content: center;
+}
+.footer-list-items1{
+    display: flex;
+    list-style: none;
+    gap: 27px;
+    margin-left: 40px;
+}
+.carbon-neutral-area{
+    display: flex;
+    color: #70757a;
+    font-family: arial;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: -12%;
+}
+.carbon-neutral-area:hover{
+    text-decoration: underline;
+}
+.footer-carbon-neutral{
+    height: 15px;
+}
+.legal-list-items{
+    display: flex;
+    list-style: none;
+    gap: 27px;
+    margin-right: 40px;
+
+}
+.footer-list-item{
+    color: #70757a;
+    font-family: arial;
+    font-size: 14px;
+}
+.footer-list-item:hover{
+    text-decoration: underline;
+
+}
+.legal-list-item{
+    color: #70757a;
+    font-family: arial;
+    font-size: 14px;
+}
+.legal-list-item:hover{
+    text-decoration: underline;
+
+}
